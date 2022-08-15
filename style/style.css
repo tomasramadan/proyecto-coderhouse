@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+} 
+
+ul{
+    list-style: none;
+}
+
+main{
+    background-color: #71d2ff70;
+}
+
+/* NAVBAR */
+
+header{
+    background-color: #183672;
+
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    height: 20vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    width: 100%;
+}
+
+.navbar__logo{
+    width: 30%;
+}
+
+.navbar__menu__page a{
+    color: white;
+}
+
+/* INDICE */
+
+.indice{
+    background-color: #0d2c69cc;
+}
+
+.indice__container{
+    width: auto;
+
+    margin: 0px 4vw;
+}
+
+.indice__section{
+    display: inline-flex;
+
+    color: white;
+    font-size: 2.5rem;
+
+    border-bottom: solid;
+    border-color: #ffb600;
+}
+
+.indice__trayect{
+    display: block;
+
+    color: white;
+}
+
+.span{
+    color: #ffb600;
+    font-size: 1.5rem;
+}
+
+/* CARDS */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #1D4E89;
+    color: white;
+    text-align: center;
+
+    width: 80%;
+    height: 100%;
+    margin: 10px;
+
+    border-radius: 15px;
+    border: solid #23427f 5px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.card__icon{
+    font-size: 4rem;
+}
+
+.card__title{
+    background-color: #23427f;
+    width: 100%;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}   
+
+/* BOTONES */
+.btn a{
+    color: white;
+}
+
+.btn{
+    background-color: #23427f;
+    
+    padding: 5px;
+    margin: 7px;
+
+    border-style: none;
+    border-radius: 5px;
+    border: solid white 2px;
+
+    transition: 0.3s;        
+}
+
+.btn:hover{
+    background-color: #ffb600;
+}
+
+/* TITULOS */
+.title{
+    width: 100%;
+    margin: 20px 0px;
+
+    background-color: #23427f;
+
+    color: white;
+    text-align: center;
+}
+
+/* MAPAS */
+
+.contact__map{
+    width: 100%;
+}
+
+.contact__map iframe{
+    width: 100%;
+    height: 50vh;
+}
+
+/* INFO CONTACTO */
+
+.contact__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__info__contain{
+    color: white;
+    background-color: #1D4E89;
+
+    margin: 10px 10px;
+    padding: 10px;
+    width: 80vw;
+    
+    display: flex;
+    align-items: center;
+    
+
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: solid #23427f 5px;
+}
+
+.contact__icon{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* MARCAS */
+
+.brands__image{
+    width: 20vw;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgb(150, 150, 150);
+}
+
+.brands__name{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brands article{
+    margin: 2vw;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align: center;
+
+    background-color: #183672;
+    color: white;
+    padding: 1vh;
+}
+
+.footer__info__list__elements{
+    padding: 1vh;
+}
+
+.footer__info__list__elements a{
+    color: white;
+}
+
+.footer__logo{
+    display: none;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    width: 100px;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+}
+
+.whatsapp__button{
+    padding: 10px;
+
+}
+
+.whatsapp__contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding: 8px;
+
+    background-color: #1bd741;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.whatsapp__contain--tel{
+    background-color: #001642;
+}
+
+.whatsapp__icon{
+    font-size: 1.5rem;
+}
+
+
