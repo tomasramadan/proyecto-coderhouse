@@ -25,6 +25,8 @@ header{
 
     position: sticky;
     top: 0;
+
+    z-index: 1000;
 }
 
 nav{
@@ -189,10 +191,8 @@ nav{
     
     display: flex;
     align-items: center;
-    
 
-    border-bottom-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-radius: 10px;
     border: solid #23427f 5px;
 }
 
