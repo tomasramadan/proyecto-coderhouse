@@ -169,6 +169,12 @@ nav{
 
     color: white;
     text-align: center;
+
+    transition: 1s;
+}
+
+.title:hover{
+    transform: scale(105%);
 }
 
 /* MAPAS */
@@ -330,9 +336,102 @@ nav{
     margin-bottom: 20px;
 }
 
-/* HEADER */
+
+/* COTIZACION */
+
+/* MAPA */
+
+.map{
+    width: 100%;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+/* FORMULARIO */
+
+.formulario{
+    margin-bottom: 20px;
+}
+
+.formulario__image{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario__contain div{
+    display: flex;
+    flex-direction: column;
+
+    margin: 5px 0px;
+}
+
+
+.formulario__contain__button{
+    color: white;
+    margin: 10px 0px;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+
+    color: #001642;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+input{
+    border-radius: 5px;
+    border: 3px #001642 solid;
+
+    background-color: #bedbff;
+
+    height: 10vh;
+}
+
+textarea{
+    border-radius: 5px;
+    border: 3px #001642 solid;
+
+    background-color: #bedbff;
+
+    height: 30vh;
+}
+
+input::placeholder{
+    color: #001642;
+}
+
+textarea::placeholder{
+    color: #001642;
+}
+
+input:hover{
+    background-color: #81baff;
+    box-shadow: 1px 1px 5px 1px black;
+    border-style: none;
+}
+
+textarea:hover{
+    background-color: #81baff;
+    box-shadow: 1px 1px 5px 1px black;
+    border-style: none;
+}
+
+
 
 @media (min-width: 768px){
+    
+    /* HEADER */
+
     .navbar-nav{
         width: 100%;
 
@@ -344,19 +443,32 @@ nav{
         width: 15vh;
     }
 
+    /* CAROUSEL */
+
     .carousel-item img{
         height: 85vh;
     }
 }
 
 @media (min-width: 1024px){
+
+    /* CARDS */
+
     .cards{
         display: flex;
         flex-direction: row;
     }
 
+    /* MARCAS */
+
     .brands__image{
-        width: 15vh;
+        width: 17vh;
+    }
+
+    /* CONTACTO */
+
+    .contact__map iframe{
+        height: 100%;
     }
 
     .contact__info__contain{
@@ -369,6 +481,22 @@ nav{
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+    /* COTIZACION */
+
+    .container__ta__btn{
+        display: flex;
+        
+    }
+
+    input{
+        height: 8vh;
+    }
+
+    .formulario__contain__button{
+        width: 30%;
+    }
+    
 }
 
 

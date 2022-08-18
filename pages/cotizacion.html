@@ -47,28 +47,32 @@
 
         <section class="formulario">
             <h2 class="title">Pedí tu cotización</h2>
-            <div class="formulario__image">
-                <img src="../images/logocerrajeria.png" alt="Cerrajeria David" class="logocotizacion">
+            <div class="container-fluid">
+                <div class="container__form row">
+                    <div class="formulario__image col-md-6">
+                        <img src="../images/logocerrajeria.png" alt="Cerrajeria David" class="logocotizacion">
+                    </div>
+                    <form class="formulario__contain col-md-6">
+                        <div>
+                            <label for="nombre" class="formulario__contain__label">Nombre y Apellido</label>
+                            <input required type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" class="formulario__contain__input">
+                        </div>
+                        <div>
+                            <label for="correo" class="formulario__contain__label">Correo Electrónico</label>
+                            <input required type="email" id="correo" name="correo" placeholder="E-mail" class="formulario__contain__input">
+                        </div>
+                        <div>
+                            <label for="telefono" class="formulario__contain__label">Teléfono</label>
+                            <input required type="tel" id="telefono" name="telefono" placeholder="Teléfono" class="formulario__contain__input">
+                        </div>
+                        <div class="container__ta__btn">
+                            <label for="mensaje" class="formulario__contain__label">Mensaje</label>
+                            <textarea required class="textarea" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejanos tu mensaje explicándonos tu problema!"></textarea>
+                            <button class="formulario__contain__button btn">Enviar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <form class="formulario__contain">
-                <div>
-                    <label for="nombre" class="formulario__contain__label">Nombre y Apellido</label>
-                    <input required type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" class="formulario__contain__input">
-                </div>
-                <div>
-                    <label for="correo" class="formulario__contain__label">Correo Electrónico</label>
-                    <input required type="email" id="correo" name="correo" placeholder="E-mail" class="formulario__contain__input">
-                </div>
-                <div>
-                    <label for="telefono" class="formulario__contain__label">Teléfono</label>
-                    <input required type="tel" id="telefono" name="telefono" placeholder="Teléfono" class="formulario__contain__input">
-                </div>
-                <div>
-                    <label for="mensaje" class="formulario__contain__label">Mensaje</label>
-                    <textarea required class="textarea" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejanos tu mensaje explicándonos tu problema!"></textarea>
-                    <button class="formulario__contain__button">Enviar</button>
-                </div>
-            </form>
         </section>
 
         <article class="map">
@@ -91,16 +95,6 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="sitemap">
-            <h3 class="sitemap__title">Mapa de sitio</h3>
-            <ul class="sitemap__list">
-                <li class="sitemap__list__page"><a href="../index.html">Inicio</a></li>
-                <li class="sitemap__list__page"><a href="#">Cotización</a></li>
-                <li class="sitemap__list__page"><a href="./servicios.html">Servicios</a></li>
-                <li class="sitemap__list__page"><a href="./productos.html">Productos</a></li>
-                <li class="sitemap__list__page"><a href="./nosotros.html">Nosotros</a></li>
-            </ul>
-        </div>
         <img src="../images/logocerrajeria.png" alt="Cerrajeria David" class="footer__logo">
         <div class="footer__info">
             <ul class="footer__info__list">
