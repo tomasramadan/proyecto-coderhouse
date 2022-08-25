@@ -1,0 +1,16 @@
+
+.title{
+    width: 100%;
+    padding: 6px;
+
+    background-color: $color-borde;
+
+    color: white;
+    text-align: center;
+
+    transition: 1s;
+
+    &:hover{
+        transform: scale(105%);
+    }
+}

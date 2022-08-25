@@ -1,0 +1,49 @@
+
+.whatsapp{
+    width: 100px;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    z-index: 1100;
+
+    &__button{
+        padding: 10px;
+    }
+
+    &__contain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        padding: 8px;
+    
+        background-color: #1bd741;
+    
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 400;
+
+        transition: 0.5s;
+
+        &__text{
+            margin: 0;
+        }
+
+        &--tel{
+            background-color: #001642;
+        }
+
+        &:hover{
+            transform: scale(125%);
+        }
+        
+    }
+
+    &__icon{
+        font-size: 1.5rem;
+    }
+}

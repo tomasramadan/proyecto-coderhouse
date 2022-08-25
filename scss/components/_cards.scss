@@ -1,0 +1,44 @@
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: $color-relleno;
+    color: white;
+    text-align: center;
+
+    width: 80%;
+    height: 100%;
+    margin: 10px;
+
+    border-radius: 15px;
+    border: solid $color-borde 5px;
+
+    &__icon{
+        font-size: 4rem;
+    }
+
+    &__title{
+        background-color: $color-borde;
+        width: 100%;
+
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+}
+
+@media (min-width: 1024px){
+    .cards{
+        display: flex;
+        flex-direction: row;
+    }
+}
