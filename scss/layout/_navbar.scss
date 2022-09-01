@@ -13,9 +13,7 @@ nav{
 }
 
 .navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include dflex(column, center);
 
     width: 100%;
     height: auto;
@@ -34,6 +32,14 @@ nav{
 
     &-nav{
         padding-bottom: 10px;
+
+        @include tablet{
+            width: 100%;
+    
+            display: flex;
+            justify-content: space-around;
+
+        }
     }
 
     &__menu__page a{
@@ -58,6 +64,7 @@ nav{
     transition: 0.3s;
 
     &.active{
+        @extend .nav-link;
         color: $color-detalles !important; 
         border-bottom: solid 2px $color-detalles;
     }
@@ -74,17 +81,9 @@ nav{
 
 .logo{
     width: 20vw;
-}
 
-@media (min-width: 768px){
-    .navbar-nav{
-        width: 100%;
-
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .logo{
+    @include tablet{
         width: 15vh;
+
     }
 }

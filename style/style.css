@@ -32,6 +32,7 @@ nav {
 
 .navbar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -49,6 +50,13 @@ nav {
 .navbar-nav {
   padding-bottom: 10px;
 }
+@media (min-width: 768px) {
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .navbar__menu__page a {
   color: white;
 }
@@ -56,7 +64,7 @@ nav {
   transition: 0.5s;
 }
 
-.nav-link {
+.nav-link, .nav-link.active {
   display: flex;
   justify-content: center;
   color: white;
@@ -81,17 +89,12 @@ nav {
 .logo {
   width: 20vw;
 }
-
 @media (min-width: 768px) {
-  .navbar-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
   .logo {
     width: 15vh;
   }
 }
+
 .footer {
   text-align: center;
   background-color: #183672;
@@ -104,25 +107,49 @@ nav {
 .footer__info__list__elements {
   padding: 1vw;
 }
+.footer__info__list__elements h3 {
+  color: white;
+  font-size: 1.2rem;
+}
 .footer__info__list__elements a {
   color: white;
+  font-size: 1.2rem;
 }
 .footer__info__list__elements p {
   margin: 0;
+  font-size: 1.2rem;
 }
-
 @media (min-width: 768px) {
   .footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
   .footer__logo {
     display: block;
-    width: 30vw;
+    width: 15vw;
     height: 100%;
   }
 }
+@media (min-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+  }
+  .footer__logo {
+    display: block;
+    width: 70%;
+    height: 100%;
+  }
+  .footer__info__list {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+  }
+}
+
 .contact__map {
   width: 100%;
 }
@@ -160,7 +187,6 @@ nav {
   font-size: 1.5rem;
   margin-right: 10px;
 }
-
 @media (min-width: 1024px) {
   .contact__map iframe {
     height: 100%;
@@ -174,6 +200,7 @@ nav {
     width: 40vw;
   }
 }
+
 .formulario {
   margin-bottom: 20px;
 }
@@ -184,9 +211,11 @@ nav {
 .formulario__contain {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 .formulario__contain div {
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 5px 0px;
@@ -353,7 +382,7 @@ input {
   border-radius: 5px;
   border: 3px #001642 solid;
   background-color: #bedbff;
-  height: 6vh;
+  height: 8vh;
 }
 input::placeholder {
   color: #001642;
@@ -364,12 +393,12 @@ input:hover {
   box-shadow: 1px 1px 5px 1px black;
   border-style: none;
 }
-
 @media (min-width: 1024px) {
   input {
-    height: 5vh;
+    height: 7vh;
   }
 }
+
 label {
   display: flex;
   justify-content: center;

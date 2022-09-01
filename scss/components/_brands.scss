@@ -27,7 +27,7 @@
 
 }
 
-@media (min-width: 1024px){
+@include desktop{
     .brands__image{
         width: 17vh;
     }

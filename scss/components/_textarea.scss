@@ -18,7 +18,7 @@ textarea{
     }
 }
 
-@media (min-width: 1024px){
+@include desktop{
     .container__ta__btn{
         display: flex;
         

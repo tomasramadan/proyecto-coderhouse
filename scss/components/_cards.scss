@@ -1,16 +1,10 @@
 .cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    @include dflex(column, space-between, center);
 
     width: 100%;
 }
 .card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    @include dflex(column, space-around, center);
 
     background-color: $color-relleno;
     color: white;
@@ -36,7 +30,8 @@
     }
 }
 
-@media (min-width: 1024px){
+
+@include desktop{
     .cards{
         display: flex;
         flex-direction: row;

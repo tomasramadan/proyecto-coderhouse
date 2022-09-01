@@ -1,9 +1,11 @@
 .carousel{
     margin-bottom: 20px;
+
+    
 }
 
 
-@media (min-width: 768px){
+@include tablet{
     .carousel-item img{
         height: 85vh;
     }

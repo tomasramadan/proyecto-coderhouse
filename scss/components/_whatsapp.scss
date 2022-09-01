@@ -11,17 +11,14 @@
     }
 
     &__contain{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include dflex(column, center);
     
         width: 100%;
         border-top-left-radius: 16px;
         border-bottom-left-radius: 16px;
         padding: 8px;
     
-        background-color: #1bd741;
+        background-color: map-get($boton, "wpp");
     
         color: white;
         font-size: 1.2rem;
@@ -34,7 +31,7 @@
         }
 
         &--tel{
-            background-color: #001642;
+            background-color: map-get($boton, "tel");
         }
 
         &:hover{
