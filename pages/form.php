@@ -14,5 +14,5 @@ $destinatario = "tomasramadan4@gmail.com";
 $asunto = "Cerrajeria David";
 
 mail($destinatario, $asunto, utf8_decode($mensaje), $header);
-include "index.html";
+include "cotizacion.html";
 ?>
