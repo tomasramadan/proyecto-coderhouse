@@ -1,12 +1,8 @@
 .carousel{
     margin-bottom: 20px;
-
-    
 }
-
-
 @include tablet{
     .carousel-item img{
-        height: 85vh;
+        height: 90vh;
     }
 }
