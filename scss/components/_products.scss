@@ -11,7 +11,7 @@
     border: solid 1px #ddd;
     border-radius: 4px;
     
-    width: 70vw;
+    width: 50vw;
 
     margin: 5vw;
 
@@ -38,7 +38,8 @@
     }
 
     &__img{
-      width: 70vw;
+      width: 50vw;
+      height: 50vw;
       border-top-right-radius: 4px;
       border-top-left-radius: 4px;
 
@@ -52,14 +53,20 @@
       color: black;
       font-weight: 300;
     }
+    &__link{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   &:hover{
-    transform: scale(104%);
+    transform: scale(105%);
     .products__card__title{
       background-color: black;
     }
   }
   &__btn{
     font-style: normal;
+    padding: 5px;
   }
 }
 
@@ -69,8 +76,10 @@
   &__card{   
     width: 30vw;
 
+
     &__img{
       width: 30vw;
+      height: 30vw;
     }
 }
 }
@@ -83,6 +92,7 @@
 
     &__img{
       width: 20vw;
+      height: 20vw;
     }
 }
 }

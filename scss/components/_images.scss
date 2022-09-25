@@ -1,0 +1,49 @@
+.galeria{
+    @include dflex(column, space-between, center);
+    picture{
+        @include dflex(column, space-between, center);
+        border: solid 10px #f8f9fa;
+        border-radius: 10px;
+
+        box-shadow: 1px 1px 30px black;
+
+        width: 60vw;
+        height: auto;
+
+        margin: 20px 10px;
+    }
+    @include tablet{
+        @include dflex(row, space-between, flex-start);
+        flex-wrap: wrap;
+        picture{
+            width: 30vw;
+            height: 40vw;
+            img{
+                height: 100%;
+            }
+        }
+    }
+    @include desktop{
+        picture{
+            width: 20vw;
+            height: 26vw;
+            filter: grayscale(100%);
+            transition: 0.2s;
+            &:hover{
+                filter: grayscale(0);
+                img{
+                    transform: scale(110%);
+                }
+            img{
+                width: 20vw;
+                height: 100%;
+                border: solid 10px #f8f9fa;
+                border-radius: 10px;
+                box-shadow: 1px 1px 30px black;
+
+                transition: 0.2s;
+                }
+            }
+        }
+    }
+}

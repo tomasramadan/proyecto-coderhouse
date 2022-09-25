@@ -17,6 +17,8 @@
     border-radius: 15px;
     border: solid $color-borde 5px;
 
+    transition: 0.3s;
+
     &__icon{
         font-size: 4rem;
     }
@@ -29,6 +31,13 @@
 
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
+    }
+
+    &:hover{
+        transform: scale(105%);
+        .card__icon{
+            color: $color-detalles;
+        }
     }
 }
 

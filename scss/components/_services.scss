@@ -1,0 +1,88 @@
+.services{
+    @include dflex(column, space-around, center);
+    &__container{
+        @include tablet{
+            width: 70vw;
+        }
+        @include desktop{
+            width: 40vw
+        }
+        @include dflex(row, space-between, center);
+        background-color: $color-borde;
+        color: white;
+        width: 100%;
+        margin: 3vw 0;
+
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px black;
+
+        transition: 0.3s;
+
+        &__title{
+            width: 100%;
+            text-align: center;
+            font-size: 1.3rem;
+            margin: 16px;
+
+            &--active{
+                font-weight: 700;
+                font-size: 2rem;
+            }
+            @include tablet{
+                font-size: 2rem;
+            }
+        }
+
+        &__img{
+            width: 30vw;
+            height: 20vw;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            @include tablet{
+                width: 20vw;
+                height: 15vw;
+            }
+
+            @include desktop{
+                width: 15vw;
+                height: 10vw;
+            }
+        }
+        &:hover{
+            transform: scale(105%)
+        }
+        &--active{
+            border-radius: 0;
+            background-color: $color-detalles;
+            color: black;
+
+            box-shadow: 0 0 0;
+
+            margin: 1vw 0;
+
+            transition: 0s;
+
+            &:hover{
+                color: white;
+            }
+
+            @include tablet{
+                width: 100%
+            }
+
+            &:hover{
+                transform: scale(100%)
+            }
+        }
+    }
+    div{
+        @include tablet{
+            @include dflex(column, space-between, center);
+            flex-wrap: wrap;
+        }
+        @include desktop{
+            @include dflex(row, space-around, center);
+        }
+    }
+}
