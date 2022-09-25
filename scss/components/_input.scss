@@ -1,4 +1,4 @@
-input{
+.formulario__contain__input{
     border-radius: 5px;
     border: 3px #001642 solid;
 
@@ -21,4 +21,28 @@ input{
         height: 7vh;     
     }
 
+}
+@include tablet{
+    .products__label{
+        @include dflex(row, space-around, center)
+    }
+}
+
+@include desktop{
+    .products__label{
+    margin: 0;
+    }
+}
+.products__input{
+    display: none;
+}
+
+input[type='radio']:checked:after {
+    width: 14px;
+    height: 14px;
+    border-radius: 15px;
+    border: solid 1px black;
+    background-color: $color-detalles;
+    content: '';
+    visibility: visible;
 }

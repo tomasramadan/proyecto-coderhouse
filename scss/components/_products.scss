@@ -1,0 +1,99 @@
+
+.products{
+  &__container__info{
+    @include dflex(column, space-around, center);
+  }
+  &__card{
+    @include dflex(column, space-around, center);
+    
+    background-color: white;
+    
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    
+    width: 70vw;
+
+    margin: 5vw;
+
+    transition: 0.3s;
+
+      div{
+        position: relative;
+      }
+
+
+    &__title{
+      background-color: rgba(0, 0, 0, 0.712);
+      padding: 5px;
+      width: auto;
+
+      position: absolute;
+      bottom: 10%;
+
+      z-index: 100;
+      padding: 10px 10px 10px;
+
+      font-weight: 700;
+      color: white;
+    }
+
+    &__img{
+      width: 70vw;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+
+      border-bottom: solid 1px #ddd;
+    }
+    
+    &__description{
+      text-align: center;
+      margin: 7px;
+
+      color: black;
+      font-weight: 300;
+    }
+  &:hover{
+    transform: scale(104%);
+    .products__card__title{
+      background-color: black;
+    }
+  }
+  &__btn{
+    font-style: normal;
+  }
+}
+
+@include tablet{
+  @include dflex(row, space-around, center);
+  flex-wrap: wrap;
+  &__card{   
+    width: 30vw;
+
+    &__img{
+      width: 30vw;
+    }
+}
+}
+
+@include desktop{
+  @include dflex(row, space-around, center);
+  &__card{   
+    width: 20vw;
+    margin: 2vw;
+
+    &__img{
+      width: 20vw;
+    }
+}
+}
+
+&__container{
+  @include dflex(column, space-around, center);
+}
+
+&__container{
+  @include desktop{
+  @include dflex(row, space-around, center);
+}
+}
+}
